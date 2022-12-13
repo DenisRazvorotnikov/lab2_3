@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -- coding: utf-8 --
+import sys
 
 if __name__ == '__main__':
     s = input()
@@ -9,4 +10,7 @@ if __name__ == '__main__':
         a[2], a[3] = s[3], s[2]
         print(''.join(a))
     else:
-        print("число нечетное")
+        print(
+            "Нечетное число букв в слове",
+            file=sys.stderr
+        )
